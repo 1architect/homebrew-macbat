@@ -1,8 +1,8 @@
 cask "macbat" do
-  version "0.8.2"
-  sha256 "0f60cfd7da354c78138a3c4d2949d8002386ec33e80753da6a7e3a710045cadb"
+  version "0.8.3"
+  sha256 "2210a531e55727597b4624359e91f6c89c5cb7bdb814ef1fe0e67a4d43b66d28"
 
-  url "https://github.com/1architect/macbat-releases/releases/download/v#{version}/MacBat-#{version}-24.zip"
+  url "https://github.com/1architect/macbat-releases/releases/download/v#{version}/MacBat-#{version}-25.zip"
   name "MacBat"
   desc "Battery time estimator and energy management utility"
   homepage "https://giovaniman8.gumroad.com/l/macbat"
