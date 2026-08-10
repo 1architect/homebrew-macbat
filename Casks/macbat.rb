@@ -7,7 +7,7 @@ cask "macbat" do
   desc "Battery time estimator and energy management utility"
   homepage "https://giovaniman8.gumroad.com/l/macbat"
 
-  depends_on macos: ">= :tahoe"
+  depends_on macos: :tahoe
 
   app "MacBat.app"
 
@@ -15,8 +15,6 @@ cask "macbat" do
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/MacBat.app"]
   end
-
-  uninstall quit: "com.giovanimanto.macbat"
 
   uninstall_postflight do
     sudoers_paths = [
@@ -29,6 +27,8 @@ cask "macbat" do
                      sudo: true
     end
   end
+
+  uninstall quit: "com.giovanimanto.macbat"
 
   zap trash: [
     "~/Library/Application Support/MacBat",
