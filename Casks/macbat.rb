@@ -1,6 +1,6 @@
 cask "macbat" do
-  version "1.0.0"
-  sha256 "a60bd11632b095e96bbaba31c31dc829eddcbd3d29fe847269e31bf6f1e806e4"
+  version "1.0.1"
+  sha256 "79f3c6ab5ed158b097baae0d8f9043502160259a5c2ee0de2f181641fcabeb38"
 
   url "https://github.com/1architect/macbat-releases/releases/download/v#{version}/MacBat-#{version}.zip"
   name "MacBat"
